@@ -1,0 +1,20 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.Header {
+  padding: 5px;
+  text-align: center;
+  background: gray;
+  color: lightcyan;
+  font-size: 10px;
+}
+
+.Footer {
+  padding: 5px;
+  text-align: center;
+  background: gray;
+  color: lightcyan;
+  font-size: 6px;
+}

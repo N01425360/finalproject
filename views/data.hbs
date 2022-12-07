@@ -1,0 +1,56 @@
+<body>
+{{!-- {{#DATA}}
+    {{_id}} &nbsp;   <b> {{title}} </b> &nbsp;&nbsp;{{isbn}} {{pageCount}}<br>
+
+{{/DATA}} --}}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<form method="GET" action="/api/restaurants">
+  <p> Page : <input type="text" name="page"/> </p> 
+  
+  <br />
+
+  <p> Per-Page : <input type="text" name="perpage" /> </p>
+  
+
+  <br />
+
+  <p> Borough <input type="text" name="borough"/></p>
+  
+
+  <br />
+
+  <input type="submit" />
+
+</form>
+
+<table border="1">
+    <h1> All Data </h1>
+    <thead>
+        <th style="width:auto">ID</th>
+        <th style="width:auto">Address</th>
+        <th style="width:auto">Borough</th>
+        <th style="width:auto">Cuisine</th>
+        <th style="width:auto">Grades</th>
+        <th style="width:auto">Name</th>
+        <th style="width:auto">Restaurant ID</th>
+    </thead>
+
+   <tbody>
+            {{#DATA}}
+                <tr>
+                    <td> {{_id}} </td>
+                    <td> {{address}}</td>
+                    <td> {{borough}}</td>
+                    <td> {{cuisine}}</td>
+                    <td> {{grades}} </td>
+                    <td> {{name}} </td>
+                    <td> {{restaurant_id}} </td>
+                </tr>
+            {{/DATA}}
+        </tbody>
+    
+</table>

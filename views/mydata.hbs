@@ -1,0 +1,35 @@
+<table border="1">
+
+    <h1> Form Data </h1>
+
+    <thead>
+
+        <th style="width:auto">ID</th>
+        <th style="width:auto">Address</th>
+        <th style="width:auto">Borough</th>
+        <th style="width:auto">Cuisine</th>
+        <th style="width:auto">Grades</th>
+        <th style="width:auto">Name</th>
+        <th style="width:auto">Restaurant ID</th>
+
+    </thead>
+    
+   <tbody>
+
+            {{#DATA}}
+                <tr>
+                    <td> {{_id}} </td>
+                    <td> {{address}}</td>
+                    <td> {{borough}}</td>
+                    <td> {{cuisine}}</td>
+                    <td> {{grades}} </td>
+                    <td> {{name}} </td>
+                    <td> {{restaurant_id}} </td>
+                </tr>
+            {{/DATA}}
+
+        </tbody>
+
+</table> 
+
+</body>
